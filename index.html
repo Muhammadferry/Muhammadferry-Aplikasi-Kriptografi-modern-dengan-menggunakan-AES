@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kriftografi</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+</head>
+<body>
+    <div class="custom-shape-divider-top-1714803923">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    
+    <div class="container">
+        <img src="asset/lock.png" alt="lock"/>
+        <h1>Encryption & Decryption</h1>
+        <textarea id="inputText" placeholder="Enter text..."></textarea>
+        <div class="controls">
+            <label for="key">Encryption Key:</label>
+            <input type="text" id="key" placeholder="Enter key...">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+        </div>
+        <textarea id="outputText" placeholder="Result..." readonly></textarea>
+    </div>
+<script src="crypto-js.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
